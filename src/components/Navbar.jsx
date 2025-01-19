@@ -1,9 +1,8 @@
-import React from "react";
 
 const Navbar = () => {
     return (
-        <nav className="bg-gray-900 text-white">
-            <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <nav className="bg-gray-900  text-white w-full" >
+            <div className=" mx-auto px-6 py-4 flex justify-between items-center">
                 {/* Logo */}
                 <div className="text-xl font-bold tracking-wide">
                     <a href="/" className="text-blue-500 hover:text-blue-400">

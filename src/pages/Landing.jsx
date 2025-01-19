@@ -1,22 +1,20 @@
-import { useState } from "react";
-import MarkdownViewer from "../components/MarkdownViewer";
+
+import Features from "../components/Features";
+import GetInTouch from "../components/GetInTouch";
 import Hero from "../components/Hero";
+import Working from "../components/Working";
 
 const LandingPage = () => {
-    const [githubLink, setGithubLink] = useState("");
-    const [submittedLink, setSubmittedLink] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (githubLink.trim()) {
-            setSubmittedLink(githubLink);
-        }
-    };
 
     return (
 
-
-        <Hero />
+        <>
+            <Hero />
+            <Features />
+            <Working />
+            <GetInTouch />
+        </>
 
     );
 };
