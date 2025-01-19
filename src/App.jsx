@@ -5,6 +5,7 @@ import LandingPage from "./pages/Landing";
 import MarkdownViewer from "./pages/Markdown";
 import useAuthStore from "./store/useUser";
 import Footer from "./components/Footer";
+import History from "./pages/History";
 
 // ProtectedRoute Component
 const ProtectedRoute = ({ children }) => {
@@ -32,6 +33,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <MarkdownViewer githubLink="" />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/history"
+            element={
+              <ProtectedRoute>
+                <History />
               </ProtectedRoute>
             }
           />
